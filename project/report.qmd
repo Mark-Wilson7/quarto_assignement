@@ -1,0 +1,139 @@
+---
+title: "Mapping the proportion of population accessing non-piped improved drinking water"
+subtitle: "Displaying the impact of non-piped improved drinking water overtime, for the top 10 countries with the highest percentage of non-piped improved drinking water in 2022"
+author: "Mark Wilson"
+date: "2024-04-22"
+format:
+ html:
+   theme: sandstone
+   backgroundcolor: lightgrey 
+   toc: true
+execute:
+  echo: false
+  warning: false
+  message: false
+  
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+#libraries
+library(plotly)
+library(tidyverse)
+
+#data
+# reading in excel
+unicef_indicator_1_7_ <- read_csv("unicef_indicator_1 (7).csv")
+ind2 <- select(unicef_indicator_1_7_, country, alpha_2_code, alpha_3_code, numeric_code, year, obs_value)
+unicef_metadata_5_ <- read_csv("unicef_metadata (5).csv")
+meta2 <- select(unicef_metadata_5_, country, alpha_2_code, alpha_3_code, numeric_code, year, life_expectancy)
+data_join <-full_join(ind2,meta2,by=c("country","numeric_code","year") )
+ind_metaL<-left_join(ind2,meta2,by=c("country","numeric_code","year","alpha_2_code","alpha_3_code"))
+#transformations
+#selecting data for 2022
+ind_metaL_2022<-ind_metaL %>%
+  filter(year==2022)
+
+  #selecting data to show top 10 countries with highest percentage in 2022 with access to clean non piped drinking water
+top10_2022<-arrange(ind_metaL_2022,desc(obs_value)) %>% 
+  head(10) %>% 
+  select(country,numeric_code)
+#joining to obtain all years data for the 10 countries in 2022 identified 
+top10c_yr <-left_join(top10_2022,ind_metaL,by=c("country","numeric_code") )
+```
+
+# Introduction
+This report highlights UNICEF data and the important work they are achieving to improve water access to people in poor regions. ***Water is one of the world’s most important resources.*** It is paramount we limit the use, preserve water and respect the importance of water. *Water is essential for everyday living, particularly in the third world where access to clean, safe water can be scarce.* **Water is a basic human need and it is imperative that all populations get increased access to clean water for health and hygiene purposes.** Businesses must be sustainable and preserve their water usage through water stewardship.
+
+
+### Importance of natural resources
+
+*The availability of safe drinking water is not on tap like it is here in Ireland.* In contrast there is an outcry when areas in Ireland are without water for one day due to maintenance works. ***Imagine, no drinking water and no toilet.*** This highlights what life must be like for people living in developing countries. The gains made by UNICEF to provide access to clean drinking water are tenuous. **It is an ongoing investment. It needs to be maintained and observed.** At the same time, outside forces pose a threat to reverse their progress. Drought and scarcity of water are caused by climate change. **Communities are destroyed and supplies are disrupted by flooding.** All ecosystems and human health are at risk from pollutants.**The map displays the average percentage of the population using non-piped improved drinking water sources in 2022. It is low in developed countries as they have piped clean water.** 
+
+
+```{r}
+#| fig-cap: "The above map outlines the percentage of people in each country using non-piped improved drinking water sources in 2022."  
+map_world<-map_data("world")
+
+map_data1<-full_join(ind_metaL_2022,map_world,by=c("country"="region"),relationship = "many-to-many")
+#create map
+ggplot(map_data1)+
+  aes(x=long,y=lat,group=group,fill=obs_value)+
+  geom_polygon()+ 
+  labs(x="", y="",title= "Percentage of population using non-piped \n improved drinking water in 2022", fill="% of population")
+
+```
+
+##  Data analysis
+
+*It is important to analyse data overtime.* Data could be shown to highlight if there are improvements in accessing non-piped improved drinking water especially in poorer countries who would not have access to piped water. **The data is redefined in the analysis of the UNICEF data to display the top 10 countries with the highest population using non-piped improved drinking water in 2022.** *The bar chart displays the evolution of the population using non-piped improved drinking water over twenty-two years between 2000-2022 for the top 10 countries with the highest percentage in 2022.* **The bar chart highlights how populations in these countries have greater access to non-piped improved drinking water overtime.** Bangladesh is an outlier as they have high access to non-piped improved water every year.  
+
+
+
+```{r}
+#| fig-cap: "The bar chart highlights the improvement in access to non-piped improved drinking water, for the top 10 countries identified as having the highest percentage in 2022 for the time period 2000-2022."
+
+#barchart 
+top10c_yr %>% 
+  ggplot(aes(country, obs_value, fill=country))+
+  geom_col()+
+  facet_wrap(~year)+
+  labs(x="", y="% non-piped improved drinking water",
+       title= "Evolution of population using non-piped improved drinking water \n from 2000-2022 for top 10 countries with highest \n percentage in 2022", 
+       fill="Country")+
+  theme_classic()+
+  theme(axis.text.x = element_blank())
+
+```
+
+Life expectancy is improving over time due to the great work of UNICEF and other charities in third world countries. The increase in life expectancy is due to:
+
+* improvements in healthcare, 
+* fresh water, 
+* food 
+* and improvements in education leading to increase in economic growth. 
+
+The times series chart displays how life expectancy improves in general over time in the ten countries selected with the highest percentage of non-piped improved drinking water in 2022. The advancements in fresh water sources such as wells greatly helps this.
+
+
+```{r}
+#| fig-cap: "It displays the life expectancy of the top 10 countries with the highest percentage using non-piped improved drinking water in 2022. It displays the improvement in life expectancy over the twenty-two years."
+#timesseries top 10 countries
+timeseries2<-top10c_yr%>%
+  ggplot()+
+  aes(year,life_expectancy,group=country,color=country)+
+  geom_line()+
+  labs(x="Years",
+       y="Life Expectancy (years)",
+       title= "Life expectancy over time of the countries identified as top 10 \n with the highest percentage using non-piped improved \n drinking water in 2022 ",
+       fill="Country")+
+  theme_classic()
+ggplotly(timeseries2)
+```
+
+**The scatter plot highlights life expectancy in relation to access to non-piped improved drinking water in the top 10 countries with the highest percentage in 2022 over the twenty-one years.** There will be outliers in the data as developed countries are included in the data who have piped clean water. *The scatter plot displays how life expectancy improves with advancements in clean water resources over the years.* The most recent data available for life expectancy is for the year 2021, it displays the data over the past twenty one years.
+
+```{r}
+#| fig-cap: "The scatterplot displays the life expectancy in relation to the access to non-piped improved drinking water overtime for the top 10 countries identified with the highest percentage in 2022."
+#scatterplot
+top10_2000_21<-top10c_yr %>% 
+  filter(year!=2022)
+ggplot(top10_2000_21)+
+  aes(obs_value,life_expectancy,color=country)+
+  geom_point()+
+  facet_wrap(~year)+
+  labs(
+    x="% non-piped improved drinking water",
+    y="life expectancy",
+    title = "Comparing life expectancy with percentage of population using \n non-piped improved drinking water from 2000-2021 for the \n top 10 countries in 2022"
+  ) 
+
+  
+```
+# Conclusion
+***As evident from the above data, implementing non-piped improved drinking water clearly increases life expectancy and consequently one would hope it would become more widespread in those developing countries that need it most.***
+
+
+

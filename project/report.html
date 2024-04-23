@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Mark Wilson">
+<meta name="dcterms.date" content="2024-04-22">
+
+<title>Mapping the proportion of population accessing non-piped improved drinking water</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="report_files/libs/clipboard/clipboard.min.js"></script>
+<script src="report_files/libs/quarto-html/quarto.js"></script>
+<script src="report_files/libs/quarto-html/popper.min.js"></script>
+<script src="report_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="report_files/libs/quarto-html/anchor.min.js"></script>
+<link href="report_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="report_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="report_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="report_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="report_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="report_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="report_files/libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="report_files/libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="report_files/libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="report_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="report_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="report_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="report_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#importance-of-natural-resources" id="toc-importance-of-natural-resources" class="nav-link" data-scroll-target="#importance-of-natural-resources">Importance of natural resources</a></li>
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis">Data analysis</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mapping the proportion of population accessing non-piped improved drinking water</h1>
+<p class="subtitle lead">Displaying the impact of non-piped improved drinking water overtime, for the top 10 countries with the highest percentage of non-piped improved drinking water in 2022</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Mark Wilson </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 22, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>This report highlights UNICEF data and the important work they are achieving to improve water access to people in poor regions. <strong><em>Water is one of the world’s most important resources.</em></strong> It is paramount we limit the use, preserve water and respect the importance of water. <em>Water is essential for everyday living, particularly in the third world where access to clean, safe water can be scarce.</em> <strong>Water is a basic human need and it is imperative that all populations get increased access to clean water for health and hygiene purposes.</strong> Businesses must be sustainable and preserve their water usage through water stewardship.</p>
+<section id="importance-of-natural-resources" class="level3">
+<h3 class="anchored" data-anchor-id="importance-of-natural-resources">Importance of natural resources</h3>
+<p><em>The availability of safe drinking water is not on tap like it is here in Ireland.</em> In contrast there is an outcry when areas in Ireland are without water for one day due to maintenance works. <strong><em>Imagine, no drinking water and no toilet.</em></strong> This highlights what life must be like for people living in developing countries. The gains made by UNICEF to provide access to clean drinking water are tenuous. <strong>It is an ongoing investment. It needs to be maintained and observed.</strong> At the same time, outside forces pose a threat to reverse their progress. Drought and scarcity of water are caused by climate change. <strong>Communities are destroyed and supplies are disrupted by flooding.</strong> All ecosystems and human health are at risk from pollutants.<strong>The map displays the average percentage of the population using non-piped improved drinking water sources in 2022. It is low in developed countries as they have piped clean water.</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="report_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>The above map outlines the percentage of people in each country using non-piped improved drinking water sources in 2022.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="data-analysis">Data analysis</h2>
+<p><em>It is important to analyse data overtime.</em> Data could be shown to highlight if there are improvements in accessing non-piped improved drinking water especially in poorer countries who would not have access to piped water. <strong>The data is redefined in the analysis of the UNICEF data to display the top 10 countries with the highest population using non-piped improved drinking water in 2022.</strong> <em>The bar chart displays the evolution of the population using non-piped improved drinking water over twenty-two years between 2000-2022 for the top 10 countries with the highest percentage in 2022.</em> <strong>The bar chart highlights how populations in these countries have greater access to non-piped improved drinking water overtime.</strong> Bangladesh is an outlier as they have high access to non-piped improved water every year.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="report_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>The bar chart highlights the improvement in access to non-piped improved drinking water, for the top 10 countries identified as having the highest percentage in 2022 for the time period 2000-2022.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Life expectancy is improving over time due to the great work of UNICEF and other charities in third world countries. The increase in life expectancy is due to:</p>
+<ul>
+<li>improvements in healthcare,</li>
+<li>fresh water,</li>
+<li>food</li>
+<li>and improvements in education leading to increase in economic growth.</li>
+</ul>
+<p>The times series chart displays how life expectancy improves in general over time in the ten countries selected with the highest percentage of non-piped improved drinking water in 2022. The advancements in fresh water sources such as wells greatly helps this.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-1e62de21fa28cad9c4f0" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-1e62de21fa28cad9c4f0">{"x":{"data":[{"x":[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[65.778999999999996,66.135000000000005,66.611999999999995,66.823999999999998,67.186999999999998,67.299000000000007,67.241,66.713999999999999,67.051000000000002,67.403000000000006,68.638000000000005,68.808999999999997,69.554000000000002,69.564999999999998,69.986000000000004,70.491,71.090000000000003,71.787999999999997,72.566999999999993,72.805999999999997,71.968000000000004,72.381,null],"text":["year: 2000<br />life_expectancy: 65.779<br />country: Bangladesh<br />country: Bangladesh","year: 2001<br />life_expectancy: 66.135<br />country: Bangladesh<br />country: Bangladesh","year: 2002<br />life_expectancy: 66.612<br />country: Bangladesh<br />country: Bangladesh","year: 2003<br />life_expectancy: 66.824<br />country: Bangladesh<br />country: Bangladesh","year: 2004<br />life_expectancy: 67.187<br />country: Bangladesh<br />country: Bangladesh","year: 2005<br />life_expectancy: 67.299<br />country: Bangladesh<br />country: Bangladesh","year: 2006<br />life_expectancy: 67.241<br />country: Bangladesh<br />country: Bangladesh","year: 2007<br />life_expectancy: 66.714<br />country: Bangladesh<br />country: Bangladesh","year: 2008<br />life_expectancy: 67.051<br />country: Bangladesh<br />country: Bangladesh","year: 2009<br />life_expectancy: 67.403<br />country: Bangladesh<br />country: Bangladesh","year: 2010<br />life_expectancy: 68.638<br />country: Bangladesh<br />country: Bangladesh","year: 2011<br />life_expectancy: 68.809<br />country: Bangladesh<br />country: Bangladesh","year: 2012<br />life_expectancy: 69.554<br />country: Bangladesh<br />country: Bangladesh","year: 2013<br />life_expectancy: 69.565<br />country: Bangladesh<br />country: Bangladesh","year: 2014<br />life_expectancy: 69.986<br />country: Bangladesh<br />country: Bangladesh","year: 2015<br />life_expectancy: 70.491<br />country: Bangladesh<br />country: Bangladesh","year: 2016<br />life_expectancy: 71.090<br />country: Bangladesh<br />country: Bangladesh","year: 2017<br />life_expectancy: 71.788<br />country: Bangladesh<br />country: Bangladesh","year: 2018<br />life_expectancy: 72.567<br />country: Bangladesh<br />country: Bangladesh","year: 2019<br />life_expectancy: 72.806<br />country: Bangladesh<br />country: Bangladesh","year: 2020<br />life_expectancy: 71.968<br />country: Bangladesh<br />country: Bangladesh","year: 2021<br />life_expectancy: 72.381<br />country: Bangladesh<br />country: Bangladesh","year: 2022<br />life_expectancy:     NA<br />country: Bangladesh<br />country: Bangladesh"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(248,118,109,1)","dash":"solid"},"hoveron":"points","name":"Bangladesh","legendgroup":"Bangladesh","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[52.478999999999999,52.661999999999999,53.277999999999999,53.677999999999997,54.116999999999997,54.631999999999998,55.107999999999997,55.552999999999997,56.043999999999997,56.347999999999999,56.719999999999999,57.018999999999998,57.405999999999999,57.790999999999997,57.886000000000003,58.134,58.762999999999998,59.109000000000002,59.348999999999997,59.719999999999999,59.326999999999998,58.892000000000003,null],"text":["year: 2000<br />life_expectancy: 52.479<br />country: Guinea<br />country: Guinea","year: 2001<br />life_expectancy: 52.662<br />country: Guinea<br />country: Guinea","year: 2002<br />life_expectancy: 53.278<br />country: Guinea<br />country: Guinea","year: 2003<br />life_expectancy: 53.678<br />country: Guinea<br />country: Guinea","year: 2004<br />life_expectancy: 54.117<br />country: Guinea<br />country: Guinea","year: 2005<br />life_expectancy: 54.632<br />country: Guinea<br />country: Guinea","year: 2006<br />life_expectancy: 55.108<br />country: Guinea<br />country: Guinea","year: 2007<br />life_expectancy: 55.553<br />country: Guinea<br />country: Guinea","year: 2008<br />life_expectancy: 56.044<br />country: Guinea<br />country: Guinea","year: 2009<br />life_expectancy: 56.348<br />country: Guinea<br />country: Guinea","year: 2010<br />life_expectancy: 56.720<br />country: Guinea<br />country: Guinea","year: 2011<br />life_expectancy: 57.019<br />country: Guinea<br />country: Guinea","year: 2012<br />life_expectancy: 57.406<br />country: Guinea<br />country: Guinea","year: 2013<br />life_expectancy: 57.791<br />country: Guinea<br />country: Guinea","year: 2014<br />life_expectancy: 57.886<br />country: Guinea<br />country: Guinea","year: 2015<br />life_expectancy: 58.134<br />country: Guinea<br />country: Guinea","year: 2016<br />life_expectancy: 58.763<br />country: Guinea<br />country: Guinea","year: 2017<br />life_expectancy: 59.109<br />country: Guinea<br />country: Guinea","year: 2018<br />life_expectancy: 59.349<br />country: Guinea<br />country: Guinea","year: 2019<br />life_expectancy: 59.720<br />country: Guinea<br />country: Guinea","year: 2020<br />life_expectancy: 59.327<br />country: Guinea<br />country: Guinea","year: 2021<br />life_expectancy: 58.892<br />country: Guinea<br />country: Guinea","year: 2022<br />life_expectancy:     NA<br />country: Guinea<br />country: Guinea"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(216,144,0,1)","dash":"solid"},"hoveron":"points","name":"Guinea","legendgroup":"Guinea","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[66.433000000000007,66.757999999999996,67.134,67.412999999999997,65.75,67.649000000000001,67.914000000000001,68.188999999999993,68.225999999999999,68.494,68.679000000000002,68.822999999999993,68.972999999999999,69.263999999999996,69.533000000000001,69.698999999999998,69.798000000000002,69.936000000000007,70.337999999999994,70.518000000000001,68.808000000000007,67.569999999999993,null],"text":["year: 2000<br />life_expectancy: 66.433<br />country: Indonesia<br />country: Indonesia","year: 2001<br />life_expectancy: 66.758<br />country: Indonesia<br />country: Indonesia","year: 2002<br />life_expectancy: 67.134<br />country: Indonesia<br />country: Indonesia","year: 2003<br />life_expectancy: 67.413<br />country: Indonesia<br />country: Indonesia","year: 2004<br />life_expectancy: 65.750<br />country: Indonesia<br />country: Indonesia","year: 2005<br />life_expectancy: 67.649<br />country: Indonesia<br />country: Indonesia","year: 2006<br />life_expectancy: 67.914<br />country: Indonesia<br />country: Indonesia","year: 2007<br />life_expectancy: 68.189<br />country: Indonesia<br />country: Indonesia","year: 2008<br />life_expectancy: 68.226<br />country: Indonesia<br />country: Indonesia","year: 2009<br />life_expectancy: 68.494<br />country: Indonesia<br />country: Indonesia","year: 2010<br />life_expectancy: 68.679<br />country: Indonesia<br />country: Indonesia","year: 2011<br />life_expectancy: 68.823<br />country: Indonesia<br />country: Indonesia","year: 2012<br />life_expectancy: 68.973<br />country: Indonesia<br />country: Indonesia","year: 2013<br />life_expectancy: 69.264<br />country: Indonesia<br />country: Indonesia","year: 2014<br />life_expectancy: 69.533<br />country: Indonesia<br />country: Indonesia","year: 2015<br />life_expectancy: 69.699<br />country: Indonesia<br />country: Indonesia","year: 2016<br />life_expectancy: 69.798<br />country: Indonesia<br />country: Indonesia","year: 2017<br />life_expectancy: 69.936<br />country: Indonesia<br />country: Indonesia","year: 2018<br />life_expectancy: 70.338<br />country: Indonesia<br />country: Indonesia","year: 2019<br />life_expectancy: 70.518<br />country: Indonesia<br />country: Indonesia","year: 2020<br />life_expectancy: 68.808<br />country: Indonesia<br />country: Indonesia","year: 2021<br />life_expectancy: 67.570<br />country: Indonesia<br />country: Indonesia","year: 2022<br />life_expectancy:     NA<br />country: Indonesia<br />country: Indonesia"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(163,165,0,1)","dash":"solid"},"hoveron":"points","name":"Indonesia","legendgroup":"Indonesia","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[51.356000000000002,52.752000000000002,53.787999999999997,53.042000000000002,56.012999999999998,56.911999999999999,57.619999999999997,58.284999999999997,58.771999999999998,59.194000000000003,59.433,59.619999999999997,59.912999999999997,59.942999999999998,59.121000000000002,59.148000000000003,60.415999999999997,60.552999999999997,60.853000000000002,61.103999999999999,60.948,60.747,null],"text":["year: 2000<br />life_expectancy: 51.356<br />country: Liberia<br />country: Liberia","year: 2001<br />life_expectancy: 52.752<br />country: Liberia<br />country: Liberia","year: 2002<br />life_expectancy: 53.788<br />country: Liberia<br />country: Liberia","year: 2003<br />life_expectancy: 53.042<br />country: Liberia<br />country: Liberia","year: 2004<br />life_expectancy: 56.013<br />country: Liberia<br />country: Liberia","year: 2005<br />life_expectancy: 56.912<br />country: Liberia<br />country: Liberia","year: 2006<br />life_expectancy: 57.620<br />country: Liberia<br />country: Liberia","year: 2007<br />life_expectancy: 58.285<br />country: Liberia<br />country: Liberia","year: 2008<br />life_expectancy: 58.772<br />country: Liberia<br />country: Liberia","year: 2009<br />life_expectancy: 59.194<br />country: Liberia<br />country: Liberia","year: 2010<br />life_expectancy: 59.433<br />country: Liberia<br />country: Liberia","year: 2011<br />life_expectancy: 59.620<br />country: Liberia<br />country: Liberia","year: 2012<br />life_expectancy: 59.913<br />country: Liberia<br />country: Liberia","year: 2013<br />life_expectancy: 59.943<br />country: Liberia<br />country: Liberia","year: 2014<br />life_expectancy: 59.121<br />country: Liberia<br />country: Liberia","year: 2015<br />life_expectancy: 59.148<br />country: Liberia<br />country: Liberia","year: 2016<br />life_expectancy: 60.416<br />country: Liberia<br />country: Liberia","year: 2017<br />life_expectancy: 60.553<br />country: Liberia<br />country: Liberia","year: 2018<br />life_expectancy: 60.853<br />country: Liberia<br />country: Liberia","year: 2019<br />life_expectancy: 61.104<br />country: Liberia<br />country: Liberia","year: 2020<br />life_expectancy: 60.948<br />country: Liberia<br />country: Liberia","year: 2021<br />life_expectancy: 60.747<br />country: Liberia<br />country: Liberia","year: 2022<br />life_expectancy:     NA<br />country: Liberia<br />country: Liberia"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(57,182,0,1)","dash":"solid"},"hoveron":"points","name":"Liberia","legendgroup":"Liberia","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[44.518000000000001,45.895000000000003,47.220999999999997,48.789999999999999,50.453000000000003,52.043999999999997,53.238,53.945999999999998,54.603999999999999,55.448,56.381,57.454999999999998,58.679000000000002,59.728999999999999,60.899000000000001,61.378,62.209000000000003,62.976999999999997,63.276000000000003,64.119,63.716999999999999,62.904000000000003,null],"text":["year: 2000<br />life_expectancy: 44.518<br />country: Malawi<br />country: Malawi","year: 2001<br />life_expectancy: 45.895<br />country: Malawi<br />country: Malawi","year: 2002<br />life_expectancy: 47.221<br />country: Malawi<br />country: Malawi","year: 2003<br />life_expectancy: 48.790<br />country: Malawi<br />country: Malawi","year: 2004<br />life_expectancy: 50.453<br />country: Malawi<br />country: Malawi","year: 2005<br />life_expectancy: 52.044<br />country: Malawi<br />country: Malawi","year: 2006<br />life_expectancy: 53.238<br />country: Malawi<br />country: Malawi","year: 2007<br />life_expectancy: 53.946<br />country: Malawi<br />country: Malawi","year: 2008<br />life_expectancy: 54.604<br />country: Malawi<br />country: Malawi","year: 2009<br />life_expectancy: 55.448<br />country: Malawi<br />country: Malawi","year: 2010<br />life_expectancy: 56.381<br />country: Malawi<br />country: Malawi","year: 2011<br />life_expectancy: 57.455<br />country: Malawi<br />country: Malawi","year: 2012<br />life_expectancy: 58.679<br />country: Malawi<br />country: Malawi","year: 2013<br />life_expectancy: 59.729<br />country: Malawi<br />country: Malawi","year: 2014<br />life_expectancy: 60.899<br />country: Malawi<br />country: Malawi","year: 2015<br />life_expectancy: 61.378<br />country: Malawi<br />country: Malawi","year: 2016<br />life_expectancy: 62.209<br />country: Malawi<br />country: Malawi","year: 2017<br />life_expectancy: 62.977<br />country: Malawi<br />country: Malawi","year: 2018<br />life_expectancy: 63.276<br />country: Malawi<br />country: Malawi","year: 2019<br />life_expectancy: 64.119<br />country: Malawi<br />country: Malawi","year: 2020<br />life_expectancy: 63.717<br />country: Malawi<br />country: Malawi","year: 2021<br />life_expectancy: 62.904<br />country: Malawi<br />country: Malawi","year: 2022<br />life_expectancy:     NA<br />country: Malawi<br />country: Malawi"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(0,191,125,1)","dash":"solid"},"hoveron":"points","name":"Malawi","legendgroup":"Malawi","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[63.642000000000003,63.719000000000001,63.744999999999997,63.695,63.585000000000001,63.488999999999997,63.359999999999999,63.235999999999997,63.229999999999997,63.225999999999999,63.256,63.372999999999998,63.463999999999999,63.622999999999998,63.826999999999998,64.057000000000002,64.269999999999996,64.5,64.745999999999995,64.977000000000004,65.269000000000005,null],"text":["year: 2001<br />life_expectancy: 63.642<br />country: Marshall Islands<br />country: Marshall Islands","year: 2002<br />life_expectancy: 63.719<br />country: Marshall Islands<br />country: Marshall Islands","year: 2003<br />life_expectancy: 63.745<br />country: Marshall Islands<br />country: Marshall Islands","year: 2004<br />life_expectancy: 63.695<br />country: Marshall Islands<br />country: Marshall Islands","year: 2005<br />life_expectancy: 63.585<br />country: Marshall Islands<br />country: Marshall Islands","year: 2006<br />life_expectancy: 63.489<br />country: Marshall Islands<br />country: Marshall Islands","year: 2007<br />life_expectancy: 63.360<br />country: Marshall Islands<br />country: Marshall Islands","year: 2008<br />life_expectancy: 63.236<br />country: Marshall Islands<br />country: Marshall Islands","year: 2009<br />life_expectancy: 63.230<br />country: Marshall Islands<br />country: Marshall Islands","year: 2010<br />life_expectancy: 63.226<br />country: Marshall Islands<br />country: Marshall Islands","year: 2011<br />life_expectancy: 63.256<br />country: Marshall Islands<br />country: Marshall Islands","year: 2012<br />life_expectancy: 63.373<br />country: Marshall Islands<br />country: Marshall Islands","year: 2013<br />life_expectancy: 63.464<br />country: Marshall Islands<br />country: Marshall Islands","year: 2014<br />life_expectancy: 63.623<br />country: Marshall Islands<br />country: Marshall Islands","year: 2015<br />life_expectancy: 63.827<br />country: Marshall Islands<br />country: Marshall Islands","year: 2016<br />life_expectancy: 64.057<br />country: Marshall Islands<br />country: Marshall Islands","year: 2017<br />life_expectancy: 64.270<br />country: Marshall Islands<br />country: Marshall Islands","year: 2018<br />life_expectancy: 64.500<br />country: Marshall Islands<br />country: Marshall Islands","year: 2019<br />life_expectancy: 64.746<br />country: Marshall Islands<br />country: Marshall Islands","year: 2020<br />life_expectancy: 64.977<br />country: Marshall Islands<br />country: Marshall Islands","year: 2021<br />life_expectancy: 65.269<br />country: Marshall Islands<br />country: Marshall Islands","year: 2022<br />life_expectancy:     NA<br />country: Marshall Islands<br />country: Marshall Islands"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(0,191,196,1)","dash":"solid"},"hoveron":"points","name":"Marshall Islands","legendgroup":"Marshall Islands","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[47.192999999999998,47.619,47.927999999999997,48.441000000000003,48.767000000000003,49.296999999999997,49.729999999999997,50.033000000000001,50.225000000000001,50.712000000000003,50.945,51.356999999999999,51.497,51.707000000000001,51.790999999999997,51.841000000000001,52.042999999999999,52.305,52.554000000000002,52.909999999999997,52.887,52.676000000000002,null],"text":["year: 2000<br />life_expectancy: 47.193<br />country: Nigeria<br />country: Nigeria","year: 2001<br />life_expectancy: 47.619<br />country: Nigeria<br />country: Nigeria","year: 2002<br />life_expectancy: 47.928<br />country: Nigeria<br />country: Nigeria","year: 2003<br />life_expectancy: 48.441<br />country: Nigeria<br />country: Nigeria","year: 2004<br />life_expectancy: 48.767<br />country: Nigeria<br />country: Nigeria","year: 2005<br />life_expectancy: 49.297<br />country: Nigeria<br />country: Nigeria","year: 2006<br />life_expectancy: 49.730<br />country: Nigeria<br />country: Nigeria","year: 2007<br />life_expectancy: 50.033<br />country: Nigeria<br />country: Nigeria","year: 2008<br />life_expectancy: 50.225<br />country: Nigeria<br />country: Nigeria","year: 2009<br />life_expectancy: 50.712<br />country: Nigeria<br />country: Nigeria","year: 2010<br />life_expectancy: 50.945<br />country: Nigeria<br />country: Nigeria","year: 2011<br />life_expectancy: 51.357<br />country: Nigeria<br />country: Nigeria","year: 2012<br />life_expectancy: 51.497<br />country: Nigeria<br />country: Nigeria","year: 2013<br />life_expectancy: 51.707<br />country: Nigeria<br />country: Nigeria","year: 2014<br />life_expectancy: 51.791<br />country: Nigeria<br />country: Nigeria","year: 2015<br />life_expectancy: 51.841<br />country: Nigeria<br />country: Nigeria","year: 2016<br />life_expectancy: 52.043<br />country: Nigeria<br />country: Nigeria","year: 2017<br />life_expectancy: 52.305<br />country: Nigeria<br />country: Nigeria","year: 2018<br />life_expectancy: 52.554<br />country: Nigeria<br />country: Nigeria","year: 2019<br />life_expectancy: 52.910<br />country: Nigeria<br />country: Nigeria","year: 2020<br />life_expectancy: 52.887<br />country: Nigeria<br />country: Nigeria","year: 2021<br />life_expectancy: 52.676<br />country: Nigeria<br />country: Nigeria","year: 2022<br />life_expectancy:     NA<br />country: Nigeria<br />country: Nigeria"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(0,176,246,1)","dash":"solid"},"hoveron":"points","name":"Nigeria","legendgroup":"Nigeria","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[62.101999999999997,62.420999999999999,62.625999999999998,62.843000000000004,63.052,62.466000000000001,63.731000000000002,63.851999999999997,64.036000000000001,64.140000000000001,64.436000000000007,64.647999999999996,64.781999999999996,65.150000000000006,65.284000000000006,65.697000000000003,65.879999999999995,66.296999999999997,66.481999999999999,66.756,66.269000000000005,66.097999999999999,null],"text":["year: 2000<br />life_expectancy: 62.102<br />country: Pakistan<br />country: Pakistan","year: 2001<br />life_expectancy: 62.421<br />country: Pakistan<br />country: Pakistan","year: 2002<br />life_expectancy: 62.626<br />country: Pakistan<br />country: Pakistan","year: 2003<br />life_expectancy: 62.843<br />country: Pakistan<br />country: Pakistan","year: 2004<br />life_expectancy: 63.052<br />country: Pakistan<br />country: Pakistan","year: 2005<br />life_expectancy: 62.466<br />country: Pakistan<br />country: Pakistan","year: 2006<br />life_expectancy: 63.731<br />country: Pakistan<br />country: Pakistan","year: 2007<br />life_expectancy: 63.852<br />country: Pakistan<br />country: Pakistan","year: 2008<br />life_expectancy: 64.036<br />country: Pakistan<br />country: Pakistan","year: 2009<br />life_expectancy: 64.140<br />country: Pakistan<br />country: Pakistan","year: 2010<br />life_expectancy: 64.436<br />country: Pakistan<br />country: Pakistan","year: 2011<br />life_expectancy: 64.648<br />country: Pakistan<br />country: Pakistan","year: 2012<br />life_expectancy: 64.782<br />country: Pakistan<br />country: Pakistan","year: 2013<br />life_expectancy: 65.150<br />country: Pakistan<br />country: Pakistan","year: 2014<br />life_expectancy: 65.284<br />country: Pakistan<br />country: Pakistan","year: 2015<br />life_expectancy: 65.697<br />country: Pakistan<br />country: Pakistan","year: 2016<br />life_expectancy: 65.880<br />country: Pakistan<br />country: Pakistan","year: 2017<br />life_expectancy: 66.297<br />country: Pakistan<br />country: Pakistan","year: 2018<br />life_expectancy: 66.482<br />country: Pakistan<br />country: Pakistan","year: 2019<br />life_expectancy: 66.756<br />country: Pakistan<br />country: Pakistan","year: 2020<br />life_expectancy: 66.269<br />country: Pakistan<br />country: Pakistan","year: 2021<br />life_expectancy: 66.098<br />country: Pakistan<br />country: Pakistan","year: 2022<br />life_expectancy:     NA<br />country: Pakistan<br />country: Pakistan"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(149,144,255,1)","dash":"solid"},"hoveron":"points","name":"Pakistan","legendgroup":"Pakistan","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[54.939999999999998,55.865000000000002,55.750999999999998,54.972999999999999,55.566000000000003,55.543999999999997,55.308999999999997,55.950000000000003,55.911999999999999,55.479999999999997,54.975000000000001,null],"text":["year: 2011<br />life_expectancy: 54.940<br />country: South Sudan<br />country: South Sudan","year: 2012<br />life_expectancy: 55.865<br />country: South Sudan<br />country: South Sudan","year: 2013<br />life_expectancy: 55.751<br />country: South Sudan<br />country: South Sudan","year: 2014<br />life_expectancy: 54.973<br />country: South Sudan<br />country: South Sudan","year: 2015<br />life_expectancy: 55.566<br />country: South Sudan<br />country: South Sudan","year: 2016<br />life_expectancy: 55.544<br />country: South Sudan<br />country: South Sudan","year: 2017<br />life_expectancy: 55.309<br />country: South Sudan<br />country: South Sudan","year: 2018<br />life_expectancy: 55.950<br />country: South Sudan<br />country: South Sudan","year: 2019<br />life_expectancy: 55.912<br />country: South Sudan<br />country: South Sudan","year: 2020<br />life_expectancy: 55.480<br />country: South Sudan<br />country: South Sudan","year: 2021<br />life_expectancy: 54.975<br />country: South Sudan<br />country: South Sudan","year: 2022<br />life_expectancy:     NA<br />country: South Sudan<br />country: South Sudan"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(231,107,243,1)","dash":"solid"},"hoveron":"points","name":"South Sudan","legendgroup":"South Sudan","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022],"y":[48.341999999999999,49.006,49.648000000000003,50.368000000000002,51.546999999999997,52.975999999999999,54.369,55.235999999999997,55.823,56.488,57.055,57.965000000000003,58.817,59.762999999999998,60.408000000000001,61.085999999999999,61.648000000000003,62.115000000000002,62.713999999999999,62.991,62.850999999999999,62.704999999999998,null],"text":["year: 2000<br />life_expectancy: 48.342<br />country: Uganda<br />country: Uganda","year: 2001<br />life_expectancy: 49.006<br />country: Uganda<br />country: Uganda","year: 2002<br />life_expectancy: 49.648<br />country: Uganda<br />country: Uganda","year: 2003<br />life_expectancy: 50.368<br />country: Uganda<br />country: Uganda","year: 2004<br />life_expectancy: 51.547<br />country: Uganda<br />country: Uganda","year: 2005<br />life_expectancy: 52.976<br />country: Uganda<br />country: Uganda","year: 2006<br />life_expectancy: 54.369<br />country: Uganda<br />country: Uganda","year: 2007<br />life_expectancy: 55.236<br />country: Uganda<br />country: Uganda","year: 2008<br />life_expectancy: 55.823<br />country: Uganda<br />country: Uganda","year: 2009<br />life_expectancy: 56.488<br />country: Uganda<br />country: Uganda","year: 2010<br />life_expectancy: 57.055<br />country: Uganda<br />country: Uganda","year: 2011<br />life_expectancy: 57.965<br />country: Uganda<br />country: Uganda","year: 2012<br />life_expectancy: 58.817<br />country: Uganda<br />country: Uganda","year: 2013<br />life_expectancy: 59.763<br />country: Uganda<br />country: Uganda","year: 2014<br />life_expectancy: 60.408<br />country: Uganda<br />country: Uganda","year: 2015<br />life_expectancy: 61.086<br />country: Uganda<br />country: Uganda","year: 2016<br />life_expectancy: 61.648<br />country: Uganda<br />country: Uganda","year: 2017<br />life_expectancy: 62.115<br />country: Uganda<br />country: Uganda","year: 2018<br />life_expectancy: 62.714<br />country: Uganda<br />country: Uganda","year: 2019<br />life_expectancy: 62.991<br />country: Uganda<br />country: Uganda","year: 2020<br />life_expectancy: 62.851<br />country: Uganda<br />country: Uganda","year: 2021<br />life_expectancy: 62.705<br />country: Uganda<br />country: Uganda","year: 2022<br />life_expectancy:     NA<br />country: Uganda<br />country: Uganda"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(255,98,188,1)","dash":"solid"},"hoveron":"points","name":"Uganda","legendgroup":"Uganda","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":37.260273972602747},"plot_bgcolor":"rgba(255,255,255,1)","paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Life expectancy over time of the countries identified as top 10 <br /> with the highest percentage using non-piped improved <br /> drinking water in 2022 ","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[1998.9000000000001,2023.0999999999999],"tickmode":"array","ticktext":["2000","2005","2010","2015","2020"],"tickvals":[2000,2005,2010,2015,2020],"categoryorder":"array","categoryarray":["2000","2005","2010","2015","2020"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Years","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[43.1036,74.220399999999998],"tickmode":"array","ticktext":["50","60","70"],"tickvals":[50,60,70],"categoryorder":"array","categoryarray":["50","60","70"],"nticks":null,"ticks":"outside","tickcolor":"rgba(51,51,51,1)","ticklen":3.6529680365296811,"tickwidth":0.66417600664176002,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.66417600664176002,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"Life Expectancy (years)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":"rgba(255,255,255,1)","bordercolor":"transparent","borderwidth":1.8897637795275593,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498},"title":{"text":"country","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"3f51be7b050":{"x":{},"y":{},"colour":{},"type":"scatter"}},"cur_data":"3f51be7b050","visdat":{"3f51be7b050":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<p>It displays the life expectancy of the top 10 countries with the highest percentage using non-piped improved drinking water in 2022. It displays the improvement in life expectancy over the twenty-two years.</p>
+</div>
+</div>
+<p><strong>The scatter plot highlights life expectancy in relation to access to non-piped improved drinking water in the top 10 countries with the highest percentage in 2022 over the twenty-one years.</strong> There will be outliers in the data as developed countries are included in the data who have piped clean water. <em>The scatter plot displays how life expectancy improves with advancements in clean water resources over the years.</em> The most recent data available for life expectancy is for the year 2021, it displays the data over the past twenty one years.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="report_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>The scatterplot displays the life expectancy in relation to the access to non-piped improved drinking water overtime for the top 10 countries identified with the highest percentage in 2022.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p><strong><em>As evident from the above data, implementing non-piped improved drinking water clearly increases life expectancy and consequently one would hope it would become more widespread in those developing countries that need it most.</em></strong></p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
